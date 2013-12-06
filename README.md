@@ -12,10 +12,9 @@ python setup.py install
 
 ## Usage
 
-The skyscraper client can be used as a context guard with python''s with statement, see below. 
+The skyscraper client can be used as a context guard with python's with statement, see below. 
  
-Any exception raised during execution of the code within the with block will be reported as
-an error. No exception will send an end message. 
+Start of the with block will send the start message. Any exception raised during execution of the code within the with block will be reported as an error. End of the with block will send an end message. 
 
 The context guard can send messages to the skyscraper infrastructure to signal progress, success,
 failure or plain existence.
