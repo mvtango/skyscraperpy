@@ -34,10 +34,10 @@ failure or plain existence.
 
 ```` python 
 
-import skyscraper
+from skyscraper.client import Client
 import time
 
-sclient=skyscraper.client("http://skyscraper.opendatacloud.de/api/")
+sclient=Client()
 
 with sclient.create("Time is up",
 		    run_timer=10,
